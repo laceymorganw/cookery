@@ -1,0 +1,89 @@
+/*GOOGLE FONT API*/
+@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+
+:root{
+    --main-color: #52C587;
+    --secondary-color: #DAFFD4;
+    --accent-color: rgba(218, 255, 212, .30);
+    --main-text-color: #3A3A3A;
+    --main-font: 'Sarina', cursive;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/*BASIC STYLING*/
+
+h1 {
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+    font-weight: 800;
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+}
+
+/*NAVBAR*/
+
+.navbar{
+    height: 100px;
+    background-color: white;
+    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, .25);
+    z-index: 9999;
+    font-family: var(--body-font);
+    font-weight: bolder;
+}
+
+.nav-link{
+    color: var(--main-text-color);
+}
+
+.nav-link:hover{
+    color: var(--main-color);
+}
+
+/*DROPDOWN MENU & LINKS*/
+
+
+
+/*Switches dropdown to hover instead of click*/
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-item{
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+    font-weight: bold;
+}
+
+
+.cookery-logo{
+    font-family: var(--main-font);
+    color: #52C587;
+    text-shadow: 4px 4px #DAFFD4;
+    font-size: 40px;
+    text-decoration: none;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+
+.cookery-logo:hover {
+    color: var(--main-color)
+}
+
+/*HERO STYLING*/
+
+/*specifically only want to style the hero-image and override
+bootstrap classes with !important*/
+#hero-image{
+    margin-right: -11px !important;
+}
+
+#hero-text{
+    font-size: 24px;
+}

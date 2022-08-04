@@ -1,0 +1,14 @@
+
+/*NAVBAR MEDIA QUERIES*/
+
+@media screen and (max-width: 640px){
+    .cookery-logo{
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1240px){
+    .cookery-logo{
+        padding-right: 10%;
+    }
+}
