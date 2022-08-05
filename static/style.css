@@ -1,17 +1,16 @@
 /*GOOGLE FONT API*/
-@import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
-
-
-:root{
-    --main-color: #52C587;
-    --secondary-color: #DAFFD4;
-    --accent-color: rgba(218, 255, 212, .30);
-    --main-text-color: #3A3A3A;
-    --main-font: 'Sarina', cursive;
-    --body-font: 'Poppins', sans-serif;
+:root {
+    --main-color: #52c587;
+    --secondary-color: #daffd4;
+    --accent-color: rgba(218, 255, 212, 0.3);
+    --main-text-color: #3a3a3a;
+    --main-font: "Sarina", cursive;
+    --body-font: "Poppins", sans-serif;
+    --fa-border-color: rgba(255, 255, 255, 0);
 }
 
 /*BASIC STYLING*/
@@ -29,43 +28,40 @@ p {
 
 /*NAVBAR*/
 
-.navbar{
+.navbar {
     height: 100px;
     background-color: white;
-    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, .25);
+    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, 0.25);
     z-index: 9999;
     font-family: var(--body-font);
     font-weight: bolder;
 }
 
-.nav-link{
+.nav-link {
     color: var(--main-text-color);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--main-color);
 }
 
 /*DROPDOWN MENU & LINKS*/
 
-
-
 /*Switches dropdown to hover instead of click*/
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown-item{
+.dropdown-item {
     font-family: var(--body-font);
     color: var(--main-text-color);
     font-weight: bold;
 }
 
-
-.cookery-logo{
+.cookery-logo {
     font-family: var(--main-font);
-    color: #52C587;
-    text-shadow: 4px 4px #DAFFD4;
+    color: #52c587;
+    text-shadow: 4px 4px #daffd4;
     font-size: 40px;
     text-decoration: none;
     padding-left: 20%;
@@ -73,17 +69,66 @@ p {
 }
 
 .cookery-logo:hover {
-    color: var(--main-color)
+    color: var(--main-color);
 }
 
 /*HERO STYLING*/
 
 /*specifically only want to style the hero-image and override
 bootstrap classes with !important*/
-#hero-image{
+#hero-image {
     margin-right: -11px !important;
 }
 
-#hero-text{
+#hero-text {
     font-size: 24px;
 }
+
+/*Search bar with filters*/
+.search-overlay {
+    position: absolute;
+    z-index: 2;
+    width: 90%;
+    height: 100px;
+    background-color: rgb(255, 255, 255, 0.25);
+    box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    margin-top: -12%;
+    margin-left: 5%;
+}
+
+.seach-input {
+    border: none;
+    color: #989898;
+    font-family: var(--body-font);
+    font-weight: 900;
+    width: 50%;
+    margin: 40px 0 40px 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+input:focus {
+    outline: none;
+    color: var(--main-text-color);
+    font-weight: 900;
+}
+
+.fa-solid {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+#search-button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 25%;
+}
+
+#search-divider{
+    height: 40px;
+    width: 5px;
+    background-color: var(--main-text-color);
+    border-radius: 1px;
+    margin: 40px 20px;
+}
+
