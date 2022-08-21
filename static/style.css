@@ -1,7 +1,6 @@
 /*GOOGLE FONT API*/
 @import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap");
 
 :root {
     --main-color: #52c587;
@@ -18,7 +17,6 @@
 h1 {
     font-family: var(--body-font);
     color: var(--main-text-color);
-    font-weight: 800;
 }
 
 p {
@@ -58,10 +56,15 @@ p {
     font-weight: bold;
 }
 
+/*Removes bootstrap arrow*/
+.dropdown-toggle::after{
+    content: none;
+}
+
 .cookery-logo {
     font-family: var(--main-font);
-    color: #52c587;
-    text-shadow: 4px 4px #daffd4;
+    color: var(--main-color);
+    text-shadow: 4px 4px var(--secondary-color);
     font-size: 40px;
     text-decoration: none;
     padding-left: 20%;
@@ -102,9 +105,9 @@ bootstrap classes with !important*/
     color: #989898;
     font-family: var(--body-font);
     font-weight: 900;
-    width: 50%;
-    margin: 40px 0 40px 20px;
+    width: 35%;
     background-color: rgba(255, 255, 255, 0);
+    margin-left: 30px;
 }
 
 input:focus {
@@ -121,14 +124,31 @@ input:focus {
 #search-button{
     border: none;
     background-color: rgba(255, 255, 255, 0);
-    margin-left: 25%;
 }
 
 #search-divider{
-    height: 40px;
-    width: 5px;
-    background-color: var(--main-text-color);
-    border-radius: 1px;
-    margin: 40px 20px;
+    height: 45px;
+    width: 4px;
+    background-color: #989898;
+    border-radius: 3px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+.search-filter{
+    border: 2.5px solid var(--main-color);
+    background-color: white;
+    font-family: var(--body-font);
+    font-weight: 600;
+    color: var(--main-color);
+    border-radius: 40px;
+    height: 50%;
+    width: 100px;
+    transition: .5s ease-in-out;
+}
+
+.search-filter:focus{
+    background-color: var(--main-color);
+    color: white;
+    transition: .5s ease-in-out;
+}
