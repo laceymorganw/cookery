@@ -33,6 +33,7 @@ p {
     z-index: 9999;
     font-family: var(--body-font);
     font-weight: bolder;
+    transition: 0.5s all ease;
 }
 
 .nav-link {
@@ -43,11 +44,31 @@ p {
     color: var(--main-color);
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border-radius: 0;
     box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, 0.25);
     margin-top: 30px;
     width: 30%;
+}
+
+/*Navbar shrink on scroll*/
+.scrolled {
+    height: 80px;
+    transition: 0.5s all ease;
+}
+
+.scrolled .cookery-logo{
+    font-size: 30px;
+    transition: 0.5s all ease;
+}
+
+.scrolled ul {
+    padding: 1rem 2rem;
+    transition: 0.5s all ease;
+}
+
+.scrolled li {
+    transition: 0.5s all ease-in-out;
 }
 
 /*DROPDOWN MENU & LINKS*/
@@ -64,7 +85,7 @@ p {
 }
 
 /*Removes bootstrap arrow*/
-.dropdown-toggle::after{
+.dropdown-toggle::after {
     content: none;
 }
 
@@ -128,12 +149,12 @@ input:focus {
     font-size: 30px;
 }
 
-#search-button{
+#search-button {
     border: none;
     background-color: rgba(255, 255, 255, 0);
 }
 
-#search-divider{
+#search-divider {
     height: 45px;
     width: 4px;
     background-color: #989898;
@@ -142,7 +163,7 @@ input:focus {
     margin-right: 30px;
 }
 
-.search-filter{
+.search-filter {
     border: 2.5px solid var(--main-color);
     background-color: white;
     font-family: var(--body-font);
@@ -154,25 +175,25 @@ input:focus {
     transition: .5s ease-in-out;
 }
 
-.search-filter:focus{
+.search-filter:focus {
     background-color: var(--main-color);
     color: white;
     transition: .5s ease-in-out;
 }
 
 /*MAIN STYLING*/
-.section-bg{
+.section-bg {
     background: linear-gradient(#daffd4 70%, white 30%);
 }
 
-.card-styles{
+.card-styles {
     box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
 }
 
 /*FEATURED RECIPE*/
 
-.featured-header{
+.featured-header {
     font-family: var(--main-font);
     color: var(--main-color);
     font-size: 100px;
@@ -180,7 +201,57 @@ input:focus {
     text-align: center;
 }
 
-.f-card-title{
+.card-styles{
+    border-radius: 20px;
+}
+
+.f-image-bg{
+    background-image: url(../images/vegan-ramen.jpg);
+    background-size: 150%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.f-card-title {
     font-family: var(--body-font);
-    font-size: 40px;
+    font-weight: 600;
+    font-size: 50px;
+    margin: 30px auto 30px;
+}
+
+.f-card-body {
+    padding: 40px;
+}
+
+/*this will affect all text in cards with the below class*/
+.card-text {
+    text-align: justify;
+}
+
+.f-recipe-btn{
+    font-family: var(--body-font);
+    font-weight: 500;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+}
+
+.f-recipe-btn:hover{
+    background-color: var(--main-text-color);
+}
+
+.f-social-bar{
+    background-color: var(--main-color);
+    height: 40px;
+    margin: 30px -40px -40px -40px;
+    border-bottom-right-radius: 20px;
+}
+
+@media screen and (max-width: 940px) {
+    .f-social-bar{
+        border-bottom-left-radius: 20px;
+    }
 }
