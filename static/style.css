@@ -250,7 +250,13 @@ input:focus {
     border-bottom-right-radius: 20px;
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1140px) {
+    .f-image-bg{
+        background-size: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
     .f-social-bar{
         border-bottom-left-radius: 20px;
     }
