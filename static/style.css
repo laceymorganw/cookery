@@ -22,7 +22,41 @@ h1 {
 p {
     font-family: var(--body-font);
     color: var(--main-text-color);
+    text-align: justify;
 }
+
+/*Font awesome icon styling*/
+
+.fa-magnifying-glass {
+    color: var(--main-color);
+    font-size: 30px;
+}
+
+.icon-button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*this updates the font size for the card icons and text in one place*/
+.fa-heart, .fa-message, .icon-counter{
+    font-size: 20px;
+}
+
+.fa-heart{
+    color: rgb(255, 5, 42);
+}
+
+.fa-message, .fa-envelope, .fa-print {
+    color: rgb(255, 250, 241);
+}
+
+.icon-counter{
+    color:white;
+    font: var(--body-font);
+    font-weight: 600;
+}
+
+
 
 /*NAVBAR*/
 
@@ -144,16 +178,6 @@ input:focus {
     font-weight: 900;
 }
 
-.fa-solid {
-    color: var(--main-color);
-    font-size: 30px;
-}
-
-#search-button {
-    border: none;
-    background-color: rgba(255, 255, 255, 0);
-}
-
 #search-divider {
     height: 45px;
     width: 4px;
@@ -260,4 +284,39 @@ input:focus {
     .f-social-bar{
         border-bottom-left-radius: 20px;
     }
+}
+
+/*FEATURED RECIPE MODAL*/
+
+.modal{
+    --bs-modal-width: 60%;
+    font-family: var(--body-font);
+}
+
+.f-modal-title{
+    text-align: center;
+    font-weight: 600;
+}
+
+.modal-header{
+    border: none;
+}
+
+.modal-content{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+    border: none;
+    outline: none;
+}
+
+.modal-footer{
+    border: none;
+    justify-content: none;
+}
+
+.btn-close{
+    background:transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2352c587'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e") center/1em auto no-repeat;
+}
+
+.btn-close:focus{
+    box-shadow: none;
 }

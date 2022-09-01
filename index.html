@@ -74,7 +74,7 @@
             <div class="row search-overlay">
                 <div class="d-flex justify-content-evenly align-items-center flex-wrap">
                     <input type="text" class="seach-input" placeholder="Search by cusine, meat type, drink...">
-                    <button type="submit" id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button type="submit" class="icon-button"><i class="fa-solid fa-magnifying-glass"></i></button>
                     <div id="search-divider"></div>
                     <button type="button" class="search-filter">Food</button>
                     <button type="button" class="search-filter">Drinks</button>
@@ -99,13 +99,82 @@
                         <div class="col-md-6">
                             <div class="f-card-body align-self-center">
                                 <h5 class="f-card-title">Vegan Ramen</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                <p class="card-text py-4 pe-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                     Duis aute irure dolor in.</p>
-                                <button class="f-recipe-btn">View Recipe</button>
-                                <div class="f-social-bar">
-                                    <span></span>
+                                <button class="f-recipe-btn mb-2" data-bs-toggle="modal"
+                                    data-bs-target="#featuredRecipeModal">View Recipe</button>
+                                <!-- Recipe Modal -->
+                                <div class="modal fade" id="featuredRecipeModal" tabindex="-1"
+                                    aria-labelledby="featuredRecipeLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="f-modal-title pt-3" id="featuredRecipeLabel">Vegan
+                                                    Ramen
+                                                </h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div>
+                                                    <div class="justify-content-center">
+                                                <h3>PREP TIME: 20 MINUTES</h3>
+                                                <h3>LEVEL INTERMEDIATE</h3>
+                                                    </div>
+                                                    <h6 class="pt-4">INGRIENTS:</h6>
+                                                    <div class="container-fluid">
+                                                        <div class="row py-4">
+                                                            <div class="col-6">
+                                                                <ul>
+                                                                    <li>2 eggs</li>
+                                                                    <li>2 carrots</li>
+                                                                    <li>2 springs of cilantro</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <ul>
+                                                                    <li>2 cups vegatable miso</li>
+                                                                    <li>1lb tofu</li>
+                                                                    <li>16oz favorite ramen or pho noodles</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mx-3">
+                                                        <p><b>STEP ONE:</b> eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                            occaecat cupidatat non proident, sunt i</p>
+                                                    </div>
+                                                    <div class="row mx-3">
+                                                        <p><b>STEP TWO:</b> eiusmod tempor incididunt ut labore et dolore magna
+                                                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                            Duis aute irure dolor in reprehenderit in voluptate velit
+                                                            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                                            occaecat cupidatat non proident, sunt i</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                                <button type="button" class="f-recipe-btn icon-button mx-2"><i
+                                                        class="fa-solid fa-envelope mx-2"></i>Email Recipe</button>
+                                                <button type="button" class="f-recipe-btn icon-button mx-2"><i
+                                                        class="fa-solid fa-print mx-2"></i>Print Recipe</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="f-social-bar d-flex justify-content-end">
+                                    <button type="submit" id="loveCounter" class="icon-button icon-counter mx-2"><i
+                                            class="fa-solid fa-heart mx-2"></i>1</button>
+                                    <button type="submit" id="" class="icon-button icon-counter mx-2 me-5"><i
+                                            class="fa-solid fa-message mx-2"></i>1</button>
                                 </div>
                             </div>
                         </div>
@@ -118,7 +187,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!--JAVASCRIPT LINK-->
     <script src="static/javascript.js"></script>
 </body>
