@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foodery</title>
+    <!--BOOTSTRAP CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--CUSTOM CSS-->
+    <link href="static/foodery.css" rel="stylesheet">
+    <link href="static/foodery-media-queries.css" rel="stylesheet">
+    <!--FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/c0319300c2.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" aria-label="Third navbar example">
+        <div class="container-fluid">
+            <a class="foodery-logo" href="#">Foodery</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMobileDropDown"
+                aria-controls="navMobileDropDown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!--The navMobileDropDown is used to connect the data-bs-target to toggle the mobile menu-->
+            <div class="collapse navbar-collapse" id="navMobileDropDown">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">Food</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All Food</a></li>
+                            <li><a class="dropdown-item" href="#">Healthy</a></li>
+                            <li><a class="dropdown-item" href="#">Quick</a></li>
+                            <li><a class="dropdown-item" href="#">Featured</a></li>
+                            <li><a class="dropdown-item" href="#">Vegan</a></li>
+                            <li><a class="dropdown-item" href="#">Desserts</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Drinks</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#featured">Featured</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#newsletter">Newsletter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--HERO BANNER-->
+    <section>
+        <div class="container-fluid">
+            <!--MOBILE-->
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 hero-text">
+                    <h1 class="display-5 fw-bold mb-3">Simple Recipes to save you time and money</h1>
+                    <p class="mt-4">Satisfy your cravings with our wide selection of simple and fast
+                        recipes.</p>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="images/salmon-bowl.jpg" class="d-block mx-lg-auto img-fluid hero-image"
+                        alt="Image of Salmon Bowl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FEATURED RECIPE-->
+    <div class="container-fluid section-bg" id="featured">
+        <div class="row">
+            <div class="col-8 mx-auto">
+                <h1 class="featured-header">Featured</h1>
+                <div class="card card-styles mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <span><!--Nested area for recipe image--></span>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h5></h5>
+                                <p></p>
+                                <div>
+                                    <!--FONT AWESOME ICONS https://fontawesome.com/icons-->
+                                    <i class="fa-solid fa-heart"></i>
+                                    <i class="fa-solid fa-message"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <footer>
+        <a class="foodery-logo" href="#">Foodery</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--JAVASCRIPT LINK-->
+    <script src="static/foodery.js"></script>
+</body>
+
+</html>

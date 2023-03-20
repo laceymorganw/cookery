@@ -1,0 +1,133 @@
+/*GOOGLE FONT API*/
+@import url("https://fonts.googleapis.com/css2?family=Sarina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+:root {
+    --main-color: #52c587;
+    --secondary-color: #daffd4;
+    --accent-color: rgba(218, 255, 212, 0.3);
+    --main-text-color: #3a3a3a;
+    --main-font: "Sarina", cursive;
+    --body-font: "Poppins", sans-serif;
+    --fa-border-color: rgba(255, 255, 255, 0);
+}
+
+/*BASIC STYLING*/
+
+body{
+    font-family: var(--body-font);
+    overflow: clip;
+    overflow-clip-margin: 20px;
+}
+
+h1 {
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+}
+
+p {
+    font-family: var(--body-font);
+    color: var(--main-text-color);
+    text-align: justify;
+}
+
+.section-bg {
+    background: linear-gradient(#daffd4 70%, white 30%);
+}
+
+/*NAVBAR*/
+
+.navbar {
+    background-color: white;
+    box-shadow: 0px 4px 34px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9999; 
+    font-family: var(--body-font);
+    font-weight: bolder;
+    transition: 0.5s all ease;
+}
+
+.foodery-logo {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    text-shadow: 4px 4px var(--secondary-color);
+    font-size: 40px;
+    text-decoration: none;
+    padding-left: 20%;
+    padding-right: 15%;
+}
+
+/*Overrides Bootstraps <a> tag hover effect*/
+.foodery-logo:hover {
+    color: var(--main-color);
+}
+
+.dropdown-item{
+    color: var(--main-text-color)
+}
+/*MOBILE NAVBAR*/
+
+.navbar-collapse{
+    background-color: white;
+    margin: 30px -10px;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+footer{
+    background-color: var(--main-color);
+    height: 150px;
+}
+
+/* The below is called a CSS combinator it specifically targets the footer tags and then the .fooder-logo class
+so it does not effect the original class above but will still inherit properties from it, this is useful when you just need to make a minor change
+so in the future if you ever need to change the font you don't have to find all the new classes you made for the logo*/
+footer > .foodery-logo{
+    color: var(--secondary-color);
+    text-shadow: 4px 4px rgb(44, 44, 44);
+}
+
+/*Overrides Bootstraps <a> tag hover effect*/
+footer > .foodery-logo:hover{
+    color: var(--secondary-color);
+}
+
+/*HERO STYLING*/
+
+/*Brings the image over the browser edge to leave not white space on the right side*/
+.hero-image {
+    margin-right: -11px !important;
+}
+
+.hero-text {
+    font-size: 24px;
+}
+
+/*FEATURED RECIPE*/
+
+.featured-header {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-size: 100px;
+    margin: 75px auto 75px;
+    text-align: center;
+}
+
+.card-styles{
+    box-shadow: 0px 0px 19px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+/*this will affect all text in cards with the below class*/
+.card-text {
+    text-align: justify;
+}
+
+/*FONT AWESOME ICON STYLES*/
+.fa-heart{
+    color: rgb(255, 81, 104);
+}
+
+.fa-message{
+    color:rgb(44, 44, 44)
+}
